@@ -13,7 +13,7 @@ const PORTFOLIO_ITEMS = [
   { id: '5.4',  src: '/portfolio/opt/ninagamgort43256 (1).jpg',  label: 'Editorial' },
   { id: '5.5',  src: '/portfolio/opt/ninagamgort43364_2.jpg',    label: 'Editorial' },
   { id: '5.6',  src: '/portfolio/opt/ninagamgort43387.jpg',      label: 'Editorial' },
-  { id: '5.7',  src: '/portfolio/opt/ninagamgort43275_1.jpg',    label: 'Editorial' },
+  { id: '5.7',  src: '/portfolio/opt/IMG_0325.PNG',               label: 'Portrait' },
   { id: '5.8',  src: '/portfolio/opt/ninagamgort43275_2.jpg',    label: 'Editorial' },
   { id: '5.9',  src: '/portfolio/opt/ninagamgort43285_1_2.jpg',  label: 'Portrait' },
   { id: '5.10', src: '/portfolio/opt/DSC_2798.JPG',              label: 'Portrait' },

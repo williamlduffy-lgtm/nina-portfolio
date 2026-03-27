@@ -169,11 +169,8 @@ export default function Work() {
 
               {/* Text below tile */}
               <div className="mt-2.5 pr-1">
-                <p className="text-[12px] leading-[1.4] font-light text-espresso/75 group-hover:text-espresso transition-colors duration-300 line-clamp-2">
-                  {item.desc}
-                </p>
-                <p className="text-[11px] tracking-[0.06em] font-light text-muted/60 mt-0.5 flex items-center gap-1.5">
-                  <span>{item.brand}</span>
+                <p className="text-[12px] leading-[1.4] font-light text-accent-blue/70 group-hover:text-accent-blue transition-colors duration-300 flex items-center gap-1.5">
+                  <span>Link Here</span>
                   <span className="inline-block w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-[0.5px]">
                     <LinkArrowIcon />
                   </span>

@@ -26,7 +26,7 @@ export default function Footer() {
           </a>
           {/* Instagram — replace # with actual handle */}
           <a
-            href="#instagram-link"
+            href="https://www.instagram.com/ninagamgort/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[11px] tracking-[0.1em] uppercase font-light text-muted/60 hover:text-espresso transition-colors"
@@ -36,23 +36,10 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Agency + copyright */}
-        <div className="flex flex-col items-center md:items-end gap-0.5">
-          <span className="text-[10px] tracking-[0.1em] uppercase text-muted/40 font-light">
-            Represented by{' '}
-            <a
-              href="https://statemgmt.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-muted/60 transition-colors"
-            >
-              State Management
-            </a>
-          </span>
-          <span className="text-[10px] tracking-[0.1em] text-muted/30 font-light">
-            &copy; {new Date().getFullYear()}
-          </span>
-        </div>
+        {/* Copyright */}
+        <span className="text-[10px] tracking-[0.1em] text-muted/30 font-light">
+          &copy; {new Date().getFullYear()}
+        </span>
       </div>
     </footer>
   )

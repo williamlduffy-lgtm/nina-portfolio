@@ -41,9 +41,6 @@ export default function Nav() {
             <span className="font-serif text-xl md:text-2xl text-espresso tracking-[0.02em]">
               Nina
             </span>
-            <span className="text-[10px] tracking-[0.12em] uppercase text-muted/70 font-light -mt-0.5 hidden md:block">
-              Represented by State Management
-            </span>
           </a>
 
           {/* Desktop links */}

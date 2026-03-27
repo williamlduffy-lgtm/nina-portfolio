@@ -26,19 +26,15 @@ export default function About() {
         <div className="reveal flex flex-col justify-center">
           <div className="max-w-lg">
             <p className="text-[15px] md:text-[16px] leading-[1.8] text-espresso/85 font-light mb-6">
-              Nina has built her career on the thing most people mistake for simplicity — knowing exactly how to be present. After years of fit and campaign work with brands like Calvin Klein, Coach, and L'Oréal, she brings a grounded, instinctive quality to every frame.
+              Nina is an actress and model based in New York City. With campaign, ecommerce, and fit work spanning Pampers, Uniqlo, Calvin Klein, Coach, and L'Oréal, she brings a grounded, instinctive quality to every frame.
             </p>
 
             <p className="text-[15px] md:text-[16px] leading-[1.8] text-espresso/85 font-light mb-6">
-              The Pampers box. The L'Oréal Color Sonic campaign. Amazon across swim, outerwear, and intimates. DKNY, Uniqlo, Coach — the range is there because the work ethic is there. But range without depth is just versatility for its own sake.
-            </p>
-
-            <p className="text-[15px] md:text-[16px] leading-[1.8] text-espresso/85 font-light mb-6">
-              That's why she's moving deliberately into acting. The same presence that makes a campaign image stop someone mid-scroll translates to something richer on screen: the ability to inhabit a character without announcing it. She isn't interested in performing. She's interested in being believed.
+              That body of work covers a genuine range of brands and categories across commercial, fit, and ecommerce. As she expands into acting, that same presence carries into character work on screen. She's drawn to layered, complex roles and serious about the craft of building them.
             </p>
 
             <p className="text-[15px] md:text-[16px] leading-[1.8] text-espresso/85 font-light mb-10">
-              Nina is drawn to layered, complex characters — the ones who sit in ambiguity, who feel like real people rather than narrative devices. She's serious about the craft, committed to the work, and ready for roles that ask for depth.
+              Nina gravitates toward characters who feel like real people, ones that sit in ambiguity rather than serving as narrative devices. She's committed to the work and focused on character development.
             </p>
 
             {/* Representation */}
