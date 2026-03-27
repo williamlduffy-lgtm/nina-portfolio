@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F7F4EF;
+  --color-surface: #EDEAE4;
+  --color-espresso: #2B2520;
+  --color-muted: #7A746C;
+  --color-accent-blue: #7B9DB8;
+  --color-accent-amber: #C8A46E;
+  --color-border: rgba(43, 37, 32, 0.10);
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Sora', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ivory);
+  color: var(--color-espresso);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-accent-blue);
+  color: white;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.anim-hero-img { animation: fadeInUp 1s cubic-bezier(0.25,0.46,0.45,0.94) forwards; opacity: 0; }
+.anim-hero-name { animation: fadeInUp 0.8s cubic-bezier(0.25,0.46,0.45,0.94) 0.3s forwards; opacity: 0; }
+.anim-hero-sub { animation: fadeInUp 0.8s cubic-bezier(0.25,0.46,0.45,0.94) 0.5s forwards; opacity: 0; }
+.anim-nav { animation: fadeInUp 0.6s cubic-bezier(0.25,0.46,0.45,0.94) 0.6s forwards; opacity: 0; }
+
+/* Nav underline */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-espresso);
+  transition: width 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.nav-link:hover::after { width: 100%; }
+
+/* Gallery hover */
+.gallery-item img {
+  transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.gallery-item:hover img {
+  transform: scale(1.025);
+}
+.gallery-item .caption-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.gallery-item:hover .caption-overlay {
+  opacity: 1;
+}
+
+/* Portfolio items */
+.portfolio-item {
+  transition: opacity 0.4s ease;
+}
+
+/* Soft blue glow on actionable elements — using deeper blue (90,130,165) */
+.glow-hover {
+  box-shadow: 0 0 0 0 rgba(90, 130, 165, 0) !important;
+  transition: box-shadow 0.4s ease !important;
+}
+.glow-hover:hover {
+  box-shadow: 0 0 0 1px rgba(90, 130, 165, 0.25),
+              0 3px 12px rgba(90, 130, 165, 0.22),
+              0 6px 24px rgba(90, 130, 165, 0.14) !important;
+}
+
+/* Nav links blue glow */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  inset: -6px -10px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 0 rgba(90, 130, 165, 0);
+  transition: box-shadow 0.4s ease;
+  pointer-events: none;
+}
+.nav-link:hover::before {
+  box-shadow: 0 0 8px rgba(90, 130, 165, 0.28),
+              0 0 16px rgba(90, 130, 165, 0.14);
+}
+
+/* Filter pills glow */
+button.glow-hover:hover {
+  box-shadow: 0 0 0 1px rgba(90, 130, 165, 0.28),
+              0 2px 10px rgba(90, 130, 165, 0.22),
+              0 4px 18px rgba(90, 130, 165, 0.12) !important;
+}
+
+/* Form submit + contact button glow */
+.submit-glow {
+  box-shadow: 0 0 0 0 rgba(90, 130, 165, 0) !important;
+  transition: box-shadow 0.4s ease !important;
+}
+.submit-glow:hover {
+  box-shadow: 0 0 0 1px rgba(90, 130, 165, 0.25),
+              0 3px 12px rgba(90, 130, 165, 0.20),
+              0 6px 20px rgba(90, 130, 165, 0.12) !important;
+}
+
+/* Form */
+input, textarea, select {
+  font-family: var(--font-sans);
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-accent-blue) !important;
+  box-shadow: 0 1px 4px rgba(123, 157, 184, 0.08);
+}
+
+/* Brand marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+/* Lightbox animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Hide scrollbar on horizontal scroll tracks */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { scrollbar-width: none; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-ivory); }
+::-webkit-scrollbar-thumb { background: var(--color-muted); border-radius: 3px; }
