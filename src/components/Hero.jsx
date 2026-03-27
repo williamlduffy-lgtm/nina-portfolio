@@ -41,14 +41,14 @@ export default function Hero() {
         </p>
 
         {/* Stats */}
-        <div className="anim-hero-sub mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-2.5 max-w-xl">
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Height: 5'6.5"</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Waist: 25"</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Hips: 35.5"</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Bust: 32B</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Shoe: 8</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Eyes: Hazel</span>
-          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70">Hair: Brown</span>
+        <div className="anim-hero-sub mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-10 gap-y-2.5 max-w-2xl">
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Height: 5'6.5"</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Waist: 25"</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Hips: 35.5"</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Bust: 32B</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Shoe: 8</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Eyes: Hazel</span>
+          <span className="text-[13px] md:text-[14px] tracking-[0.1em] uppercase font-light text-muted/70 whitespace-nowrap">Hair: Brown</span>
         </div>
       </div>
     </section>
